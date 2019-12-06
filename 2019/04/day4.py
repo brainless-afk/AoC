@@ -8,9 +8,7 @@ def check_password(number):
     digits = list(map(int, str(number)))
     same_digit = False
 
-    # Part 2
     element_counter = collections.Counter(digits)
-
     for one, two in zip(digits, digits[1:]):
         if one == two:
             if element_counter.get(one) == 2:
