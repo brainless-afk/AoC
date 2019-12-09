@@ -29,9 +29,9 @@ def calc_intcode(array, in_phase, in_signal, phase=True, pos_zero=0):
         elif opcode == 3:
             if phase:
                 array[array[pos_zero + 1]] = in_phase
-                phase = False
             else:
                 array[array[pos_zero + 1]] = in_signal
+            phase = False
             pos_zero += 2
         elif opcode == 4:
             out = modus_operandi(array, pos_zero + 1, mode1)
