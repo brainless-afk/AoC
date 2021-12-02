@@ -1,19 +1,8 @@
-use std::fs::File;
-use std::io::{BufRead, BufReader};
-
-fn read_file() -> Vec<String> {
-    let file_in = File::open("inputs/day01").unwrap();
-    let reader = BufReader::new(file_in);
-    return reader.lines().map(|line| line.unwrap()).collect();
-}
-
-fn parse_input(content: Vec<String>) -> Vec<u16> {
-    return content.iter().map(|x| x.parse::<u16>().unwrap()).collect();
-}
+use aoc2021::read_file::{read_input, parse_as_num};
 
 fn main() {
-    let content = read_file();
-    let lines = parse_input(content);
+    let content = read_input("01");
+    let lines = parse_as_num(content);
 
     let result_part1 = part1(&lines);
     println!("Part 1: {}", result_part1);
