@@ -102,5 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-2020/.vscode/
 .gitignore
+
+### DotnetCore ###
+# .NET Core build folders
+bin/
+obj/
