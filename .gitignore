@@ -108,3 +108,4 @@ venv.bak/
 # .NET Core build folders
 bin/
 obj/
+.vs
