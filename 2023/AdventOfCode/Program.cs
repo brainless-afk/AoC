@@ -1,4 +1,4 @@
-// https://github.com/eduherminio/AdventOfCode.Template
+﻿// https://github.com/eduherminio/AdventOfCode.Template
 // By default, only your last problem will be solved when running the project. You can change that by behavior by modifying Program.cs.
 // Invoking different methods:
 

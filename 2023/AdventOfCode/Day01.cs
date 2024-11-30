@@ -41,7 +41,7 @@ public class Day01 : BaseDay
             .Replace("nine", "nine9nine");
     }
 
-    public override ValueTask<string> Solve_1() => new($"Solution to {ClassPrefix} , part 1");
+    public override ValueTask<string> Solve_1() => new(CalculateSum().ToString());
 
-    public override ValueTask<string> Solve_2() => new($"Solution to {ClassPrefix} {CalculateSumPart2()}, part 2");
+    public override ValueTask<string> Solve_2() => new(CalculateSumPart2().ToString());
 }
