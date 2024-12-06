@@ -6,7 +6,7 @@ public class Day02 : BaseDay
 
     public Day02()
     {
-        _lines = [.. File.ReadAllText(InputFilePath).Split('\n')];
+        _lines = [.. File.ReadAllText(InputFilePath).Split(Environment.NewLine)];
     }
 
     private int CalculateNumberOfSafeReports()

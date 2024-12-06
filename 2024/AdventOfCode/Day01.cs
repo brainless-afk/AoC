@@ -6,7 +6,7 @@ public class Day01 : BaseDay
 
     public Day01()
     {
-        _lines = [.. File.ReadAllText(InputFilePath).Split('\n')];
+        _lines = [.. File.ReadAllText(InputFilePath).Split(Environment.NewLine)];
     }
 
     private (List<int>, List<int>) ParseInputToLists()

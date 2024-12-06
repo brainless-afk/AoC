@@ -6,7 +6,7 @@ public class Day04 : BaseDay
 
     public Day04()
     {
-        _lines = [.. File.ReadAllText(InputFilePath).Split("\r\n")];
+        _lines = [.. File.ReadAllText(InputFilePath).Split(Environment.NewLine)];
     }
 
     #region Part 1
